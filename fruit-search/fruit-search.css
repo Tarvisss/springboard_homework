@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body {
+    padding-top: 10rem;
+    background-image:linear-gradient(to right, rgb(215, 215, 150), rgb(67, 159, 225));
+   margin: auto;
+   width: 20%;
+   
+
+}
+#search-button{
+    position: absolute;
+    display: inline-block;
+    background-image:linear-gradient(to right, rgb(215, 215, 150), rgb(67, 159, 225));
+    border-radius: .5rem;
+    cursor: pointer;
+    color: aliceblue;
+
+}
+.fruit-button{
+
+    background:none;
+    border : none
+}
+
+ #fruit{
+list-style: none;
+padding: unset;
+margin: unset;
+
+} 
+.suggestions{
+    
+    background-image:linear-gradient(to right, rgb(187, 191, 121), rgb(87, 148, 206));
+    border-radius: .25rem;
+    list-style: none;
+    padding: unset;
+    margin: unset;
+    position: absolute;
+}
+#search-form{
+background: none;
+border-radius: .5rem;
+display: inline-block;
+}
+
+li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
