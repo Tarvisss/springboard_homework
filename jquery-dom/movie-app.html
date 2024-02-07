@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <style>
+
+    img {
+      max-width: 70%;
+    }
+
+    .image-center {
+      display: block;
+      margin: 10px auto;
+    }
+h1{
+text-align: center;
+}
+  </style>
+</head>
+
+<body>
+<h1>Film List</h1>
+
+<div id="container">
+    <form id="film-list">
+        <input id="Idone" type="text" placeholder="Enter Film Name">
+        <input id="Idtwo" type="text" placeholder="1 to 10, How good is it?">
+        <button>Add to watch list</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+  document.querySelector('form').addEventListener('submit', function(event) { 
+  event.preventDefault(); // Prevents the form from submitting and the page from reloading 
+  // Your custom logic here 
+
+  });
+  const btnAdd = document.querySelector('button')
+
+const addFilm = e => {
+  let inputOne = document.querySelector('#Idone').value;
+  let inputTwo = document.querySelector('#Idtwo').value;
+  let outputVal = inputOne + inputTwo;
+  
+
+      film = outputVal;
+
+  if (film) {
+    let li = document.createElement('li')
+    li.textContent = film
+    document.querySelector('#container').append(li)
+    outputVal.value = ''
+  }
+}
+  
+btnAdd.addEventListener('click', addFilm)
+
+
+  
+</script>
+</body>
+
+</html>
